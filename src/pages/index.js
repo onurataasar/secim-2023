@@ -74,8 +74,15 @@ export default function Home() {
                 className="mr-20 max-lg:mb-5 lg:mr-24 z-10 "
                 opts={
                   isMobile
-                    ? { height: "160", width: "220" }
-                    : { height: "240", width: "340" }
+                    ? {
+                        height: "160",
+                        width: "220",
+                      }
+                    : {
+                        height: "240",
+                        width: "340",
+                        /* playerVars: { autoplay: 1 }, */
+                      }
                 }
               ></YouTube>
             </div>

@@ -31,6 +31,14 @@ const nedenler = [
       "Afet bölgesindeki iletişim aksadı, belki de yüzlerce insan bu nedenle hayatını kaybetti.",
     embed: "hgthj9j6Ff4",
   },
+  {
+    info: "SIĞINMACI SORUNU",
+    paragraph:
+      "Ama Suriye, ama Afganistan, fark etmiyor, biz muhacirlik ve ensar olma kabiliyetinin ne olduğunu en iyi bilen bir kültürün mensuplarıyız.",
+    conclusion:
+      "Milyonlarca Suriyeli ve Afgan göçmen Türkiye’ye yerleşti. Bu göçmenlerin çoğu Türkiye’deki demografik yapıyı bozdu ve işsizliğin ve yoksulluğun sebebi oldu.",
+    embed: "vadL-QceKuw",
+  },
 ];
 
 const nedenlerLength = nedenler.length;
