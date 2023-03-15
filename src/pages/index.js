@@ -21,8 +21,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <Image
+          width={120}
+          height={60}
+          src="/secim2023-logo.png"
+          className="lg:absolute top-8 max-lg:pb-10"
+          alt="logo"
+        />
         {nedenler && (
-          <div className="flex flex-col max-lg:gap-16 lg:flex-row  justify-between w-full items-center">
+          <div className="flex flex-col max-lg:gap-24 lg:flex-row  justify-between w-full items-center">
             <div className="flex flex-col lg:w-5/12 gap-8">
               <Neden
                 info={nedenler[index].info}
@@ -45,15 +52,27 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-8">
-              <div className="bg-slate-800 p-2 rounded-md">
-                <YouTube
-                  videoId={nedenler[index].embed}
-                  opts={{ height: "290", width: "440" }}
-                ></YouTube>
-              </div>
+              <img
+                src="/old-tv.png"
+                alt="tv"
+                className="absolute w-[540px] mb-24"
+                draggable={false}
+              />
+              <YouTube
+                videoId={nedenler[index].embed}
+                className="mr-20 z-20"
+                opts={{ height: "240", width: "340" }}
+              ></YouTube>
             </div>
           </div>
         )}{" "}
+        <a
+          href="https://www.github.com/onurataasar/secim-2023"
+          target={"_blank"}
+          className="lg:absolute max-lg:pt-8 max-lg:mt-8 bottom-4 lg:right-6"
+        >
+          github
+        </a>
       </main>
     </>
   );
